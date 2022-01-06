@@ -17,6 +17,7 @@ export default function App() {
     <div className="App">
       <h1>Financial Charts with Sync function</h1>
       <ChartComponent
+        title="AAPL Historical"
         primaryXAxis={{ valueType: "DateTime" }}
         primaryYAxis={{ title: "Price" }}
         tooltip={{ enable: true }}
