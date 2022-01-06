@@ -19,7 +19,11 @@ export default function App() {
       <ChartComponent>
         <Inject services={[HiloSeries]}></Inject>
         <SeriesCollectionDirective>
-          <SeriesDirective type="Hilo" name="Apple Inc"></SeriesDirective>
+          <SeriesDirective
+            type="Hilo"
+            name="Apple Inc"
+            dataSource={chartData}
+          ></SeriesDirective>
         </SeriesCollectionDirective>
       </ChartComponent>
     </div>
