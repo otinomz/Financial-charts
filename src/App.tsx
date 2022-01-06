@@ -1,3 +1,11 @@
+import React from "react";
+import "./styles.css";
+import {
+  ChartComponent,
+  SeriesCollectionDirective,
+  SeriesDirective
+} from "@syncfusion/ej2-react-charts";
+
 export default function App() {
   return (
     <div className="App">
