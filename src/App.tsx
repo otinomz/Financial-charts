@@ -3,7 +3,12 @@ import "./styles.css";
 import {
   ChartComponent,
   SeriesCollectionDirective,
-  SeriesDirective
+  SeriesDirective,
+  HiloSeries,
+  Inject,
+  DateTime,
+  Tooltip,
+  Crosshair
 } from "@syncfusion/ej2-react-charts";
 
 export default function App() {
