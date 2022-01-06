@@ -16,13 +16,20 @@ export default function App() {
   return (
     <div className="App">
       <h1>Financial Charts with Sync function</h1>
-      <ChartComponent>
-        <Inject services={[HiloSeries]}></Inject>
+      <ChartComponent
+        primaryXAxis={{ valueType: "DateTime" }}
+        primaryYAxis={{ title: "Price" }}
+        tooltip={{ enable: true }}
+      >
+        <Inject services={[HiloSeries, DateTime, Tooltip]}></Inject>
         <SeriesCollectionDirective>
           <SeriesDirective
             type="Hilo"
             name="Apple Inc"
             dataSource={chartData}
+            xName="date"
+            high="high"
+            low="low"
           ></SeriesDirective>
         </SeriesCollectionDirective>
       </ChartComponent>
